@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">Solar orbit — orange, yellow and white</title>
+  <rect id="background" x="24" y="24" width="976" height="976" rx="210" fill="#F59E0B"/>
+  <path id="orbit" d="M230 513C260 337 435 230 612 275" fill="none" stroke="#FFFFFF" stroke-width="24" stroke-linecap="round"/>
+  <circle id="sun" cx="708" cy="298" r="62" fill="#FFFFFF"/>
+  <g id="solar-panels" transform="translate(365 446) skewX(-36)">
+    <rect id="panel-upper-left" width="190" height="118" rx="16" fill="#FFFFFF"/>
+    <rect id="panel-upper-right" x="214" width="190" height="118" rx="16" fill="#FFFFFF"/>
+    <rect id="panel-lower-left" y="142" width="190" height="118" rx="16" fill="#FFFFFF"/>
+    <rect id="panel-lower-right" x="214" y="142" width="190" height="118" rx="16" fill="#FFFFFF"/>
+  </g>
+</svg>

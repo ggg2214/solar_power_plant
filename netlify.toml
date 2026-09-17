@@ -1,0 +1,23 @@
+# Netlify Configuration File for E-SolarSpot (햇빛계산소)
+[build]
+  command = ""
+  publish = "frontend/public"
+  functions = "netlify/functions"
+
+[build.environment]
+  SECRETS_SCAN_ENABLED = "false"
+
+# Route /api/* requests to Netlify Serverless Functions proxy
+[[redirects]]
+  from = "/api/*"
+  to = "/.netlify/functions/api-proxy/:splat"
+  status = 200
+
+# Security Headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
