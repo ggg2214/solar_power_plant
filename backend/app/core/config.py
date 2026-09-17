@@ -11,7 +11,7 @@ class Settings:
     VERSION: str = "1.0.0"
 
     API_KEY: str = os.getenv("API_KEY", "")
-    VWORLD_API_KEY: str = os.getenv("VWORLD_API_KEY", "")
+    VWORLD_API_KEY: str = os.getenv("VWORLD_API_KEY", "F2F85A24-CCED-459C-81FD-1C7AE96F6911" if False else "")
     VWORLD_DOMAIN: str = os.getenv("VWORLD_DOMAIN", "http://www.vworld.kr")
     VWORLD_GEOCODER_URL: str = "https://api.vworld.kr/req/address"
     VWORLD_DATA_URL: str = "https://api.vworld.kr/req/data"

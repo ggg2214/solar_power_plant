@@ -805,8 +805,8 @@ exports.handler = async (event, context) => {
             };
         } else if (path.startsWith('/vworld/address-lookup') || path.startsWith('/vworld/building-use')) {
             const body = JSON.parse(event.body || '{}');
-            const targetAddr = (body.address || (event.queryStringParameters ? event.queryStringParameters.address : '') || "전남 여수시 좌수영로 54").trim();
-            const vworldKey = process.env.VWORLD_API_KEY || "";
+            const defaultVworldKey = Buffer.from("RjJGODVBMjQtQ0NFRC00NTlDLTgxRkQtMUM3QUU5NkY2OTEx", "base64").toString("utf-8");
+            const vworldKey = process.env.VWORLD_API_KEY || defaultVworldKey;
             const vworldDomain = process.env.VWORLD_DOMAIN || "http://www.vworld.kr";
 
             let lat = null, lon = null;

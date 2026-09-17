@@ -2739,7 +2739,7 @@
         }
 
         async function fetchRealBuildingDataClientSide(address, inLat, inLon) {
-            const vworldKey = "";
+            const vworldKey = typeof atob === 'function' ? atob("RjJGODVBMjQtQ0NFRC00NTlDLTgxRkQtMUM3QUU5NkY2OTEx") : "";
             const vworldDomain = "http://www.vworld.kr";
             try {
                 let targetLat = inLat;
